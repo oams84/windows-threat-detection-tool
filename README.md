@@ -36,13 +36,15 @@ It processes Windows-style security events and generates structured alerts for i
 
 ```mermaid
 flowchart TD
-    A[Windows Security Logs] --> B[Parser]
-    B --> C[Detection Engine]
-    C --> D[IP-Based Detection]
-    C --> E[User-Based Detection]
-    D --> F[Alert Generation]
+    A["Windows Security Logs"] --> B["Parser"]
+    B --> C["Detection Engine"]
+    C --> D["IP-Based Detection"]
+    C --> E["User-Based Detection"]
+    D --> F["Alert Generation"]
     E --> F
-    F --> G[TXT / CSV / JSON Reports]
+    F --> G["TXT / CSV / JSON Reports"]
+
+---
 
 ## 🖥️ How to Run (Step-by-Step)
 
@@ -70,6 +72,7 @@ timestamp,event_id,account_name,source_ip,status
 4. Run the tool
 python3 main.py
 
+---
 
 
 ## 📌 Note
